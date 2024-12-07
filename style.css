@@ -1,0 +1,441 @@
+::selection {
+    color: black;
+    background: yellow;
+}
+
+  /* Global Styles */
+  body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f5f1;
+  }
+  
+  .logo img {
+    width: 50px;
+    /* Ölçüleri gereksinimlere göre ayarlayın */
+    height: auto;
+  }
+  
+  p {
+    margin: 0.5rem 0;
+    font-weight: normal !important;
+  }
+  
+  /* Header Styles */
+  header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 24px;
+  }
+  
+  .logo img {
+    width: 100px;
+    height: auto;
+    border-radius: 50px;
+  }
+  
+  .header-menu {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .header-menu li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .header-menu li a:hover {
+    color: #ddd;
+  }
+  
+  /* Feedback Styles */
+  .feedback-section {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: small;
+  }
+  
+  .github-logo {
+    font-size: 30px;
+    color: #ffffff;
+    transition: color 0.3s ease;
+  }
+  
+  .github-logo:hover {
+    color: #007bff;
+  }
+  
+  .header-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    font-size: small !important;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .header-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .toggle-header-button {
+    background-color: #ffffff;
+    color: white;
+    border: none;
+    padding: 0.2rem 0.75rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: large;
+  }
+  
+  .toggle-header-button:hover {
+    background-color: #c0c0c0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .update-notes {
+    background-color: #000000 !important;
+    color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-top: 1.5rem;
+  }
+  
+  .update-notes p {
+    margin: 0.5rem 0;
+    font-weight: bolder !important;
+    font-size: smaller;
+  }
+  
+  .mobile-warning {
+    display: none;
+    /* Başlangıçta gizli */
+    text-align: center;
+    background-color: #ffffff;
+    padding: 5px;
+    font-weight: bolder !important;
+    font-size: small;
+    border: none !important;
+  
+  }
+  
+  /* Feed Section */
+  .feed-section {
+    border: 1px solid #ddd;
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
+    background-color: #f9f2e7d5;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .feed-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Haber Başlığı Kutuları */
+  .article {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+    /* Yatay yönde hizalama */
+    border-radius: 5px;
+  }
+  .article:hover {
+    background-color: #ebebeb;
+  }
+  
+  .article h2 {
+    margin-top: 0;
+    font-size: 1.25rem;
+  }
+  
+  .article a {
+    color: #007bff;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: large;
+  }
+  
+  .article a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+  }
+  
+  .article p {
+    margin: 0.5rem 0;
+    color: #444;
+    opacity: 1;
+    font-weight: lighter;
+  }
+  
+  .image-container {
+    margin-left: 1rem;
+    /* Görselin içeriğin sağına bırakılması */
+    flex-shrink: 0;
+    /* Görselin boyutunu değiştirmeden kalması */
+  }
+  
+  .image-container img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .content-container {
+    flex-grow: 1;
+    /* İçerik bölümünün boşluğu doldurması */
+  }
+  
+  /* Dark Mode */
+  .dark-mode {
+    background-color: #111;
+    color: #fff;
+  }
+  
+  .dark-mode .feed-section {
+    background-color: #222;
+    border-color: #444;
+  }
+  
+  .dark-mode .article {
+    background-color: #333;
+    border-color: #767676;
+  }
+  
+  .dark-mode .article:hover {
+    background-color: #444;
+  }
+  
+  .dark-mode .article h2 {
+    color: #fff;
+    margin-top: 0;
+    font-size: 1.25rem;
+  }
+  
+  .dark-mode .article a {
+    color: #007bff;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: large;
+  }
+  
+  .dark-mode .article a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+  }
+  
+  .dark-mode .article p {
+    color: #ebebeb;
+    margin: 0.5rem 0;
+    opacity: 1;
+    font-weight: lighter;
+  }
+  
+  
+  /* Mobil uyarı kutusu */
+  .dark-mode .mobile-warning {
+    /* Başlangıçta gizli */
+    text-align: center;
+    background-color: #232323;
+    padding: 5px;
+    border: 3px solid;
+    font-weight: bolder;
+    font-size: small;
+    color: white;
+    border: none;
+  }
+  
+  /* Footer Styles */
+  footer {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  footer p {
+    margin: 0.5rem 0;
+  }
+  
+  footer ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  footer ul li {
+    margin-bottom: 0.3rem;
+  }
+  
+  img {
+    max-width: 150px;
+    max-height: 100px;
+    border-radius: 5px;
+  }
+  
+  /* Mobil uyarı kutusu */
+  .mobile-warning {
+    display: none;
+    /* Başlangıçta gizli */
+    text-align: center;
+    background-color: #e7dcdc;
+    padding: 5px;
+    border: 3px solid;
+    font-weight: lighter;
+    font-size: small;
+  }
+  
+  /* Mobil cihazlarda */
+  @media (max-width: 600px) {
+    .mobile-warning {
+      display: block;
+      /* Göster */
+    }
+  
+    /* Haber fotoğraflarını gizle */
+    img {
+      display: none;
+    }
+  
+    .header-button {
+      display: none;
+    }
+  
+    .github-logo {
+      display: none;
+    }
+  
+  }
+  
+  /* Ekran genişliği 600 pikselden küçük olduğunda header fontunu küçült */
+  @media (max-width: 600px) {
+    h1 {
+      font-size: x-large;
+      margin-right: 2%;
+    }
+  }
+  
+  /* Ana içerik bölümü */
+  .content {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  /* Update Notes bölümü stilleri */
+  #update-notes {
+    margin-top: 5px;
+    background-color: #f9f9f9;
+    padding: 1rem;
+    border-radius: 8px;
+    flex: 1;
+    /* Eşit genişlikte */
+    border: 1px solid;
+    font-weight: 100;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+  #update-notes h3 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: medium;
+    font-weight: 600;
+  }
+  
+  #update-list {
+    list-style: none;
+    padding: 0;
+    font-weight: 100;
+  }
+  
+  #update-list li {
+    margin-bottom: 0.5rem;
+    font-weight: 100;
+  }
+  
+  #update-list {
+    font-size: small;
+    font-weight: 100;
+  }
+  
+  /* Update Notes bölümü stilleri */
+  .dark-mode #update-notes {
+    margin-top: 5px;
+    background-color: #232323;
+    padding: 1rem;
+    border-radius: 8px;
+    flex: 1;
+  }
+  
+  .dark-mode #update-notes h3 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: white;
+  }
+  
+  .dark-mode #update-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .dark-mode #update-list li {
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Mobil cihazlarda */
+  @media (max-width: 600px) {
+    .content {
+      display: none;
+      /* Gizle */
+    }
+  }
+  /* Search bar styling */
+input[type="text"] {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  width: 90%;
+  max-width: 400px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+input[type="text"]:focus {
+border-color: #007bff;
+outline: none;
+}
+
+button {
+margin-top: 10px;
+padding: 10px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+
+button:hover {
+background-color: #ddd;
+}
